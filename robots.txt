@@ -1,5 +1,5 @@
 Host: transinvestprom.ru
 User-Agent: *
 Allow: /
-Disallow: /admin
+Disallow: /admin/
 Sitemap: http://transinvestprom.ru/sitemap.xml

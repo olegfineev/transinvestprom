@@ -14,7 +14,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 	<!-- Important stuff for SEO, don't neglect. (And don't duplicate values across your site!) -->
-	<title>Транспортная компания «Инвест-пром»</title>
+	<title>Транспортная компания «Инвест-пром» - Услуги грузоперевозок</title>
 	<meta name="author" content="ООО «Инвест-Пром»" />
 	<meta name="description" content="ООО «Инвест-Пром»" />
 
@@ -79,11 +79,9 @@
 
 <body>
 
-<div id="root">
-
-	<header id="header">
-		<div class="header-inner">
-			<div class="container">
+  <header id="header" class="top">
+    <div class="header-inner">
+      <div class="container">
         <div class="main-nav">
           <nav class="navbar" role="navigation">
 
@@ -91,6 +89,10 @@
               <a href="/" title="ООО «Инвест-Пром»">
                 <img src="assets/img/logo.svg" alt="ООО «Инвест-Пром»">
               </a>
+            </div>
+
+            <div class="phone">
+              <a href="tel:+7(953)687-48-36" title="Позвонить" target="_blank">+7 (953) 687-48-36</a>
             </div>
 
             <ul id="menu">
@@ -109,9 +111,11 @@
           </nav>
           <div class="clearfix"></div>
         </div>
-			</div>
-		</div>
-	</header>
+      </div>
+    </div>
+  </header>
+
+<div id="root">
 
 	<main id="content">
 
@@ -121,8 +125,46 @@
         </div>
     </section>
 
-    <section class="page-content" id="about">
-
+    <section class="page-content cover-bg" id="about">
+      <div class="container">
+        <div class="row">
+          <ul class="services">
+            <li class="item">
+              <div class="services-element service-feature-box ">
+                <div class="service-media">
+                  <img src="assets/img/service-01.jpg" alt="Автомобильные перевозки">
+                </div>
+                <div class="service-body">
+                  <h3 class="title">Автомобильные перевозки</h3>
+                  <p class="text">We have a wide experience in overland industry specific logistic solutions like pharmaceutical logistics, retail and automotive logistics by train or road.</p>
+                </div>
+              </div>
+            </li>
+            <li class="item">
+              <div class="services-element service-feature-box ">
+                <div class="service-media">
+                  <img src="assets/img/service-02.jpg" alt="Контейнерные перевозки">
+                </div>
+                <div class="service-body">
+                  <h3 class="title">Контейнерные перевозки</h3>
+                  <p class="text">We have a wide experience in overland industry specific logistic solutions like pharmaceutical logistics, retail and automotive logistics by train or road.</p>
+                </div>
+              </div>
+            </li>
+            <li class="item">
+              <div class="services-element service-feature-box ">
+                <div class="service-media">
+                  <img src="assets/img/service-03.jpg" alt="Перевозки сборных и негабаритных грузов">
+                </div>
+                <div class="service-body">
+                  <h3 class="title">Перевозки сборных и негабаритных грузов</h3>
+                  <p class="text">We have a wide experience in overland industry specific logistic solutions like pharmaceutical logistics, retail and automotive logistics by train or road.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section class="page-content" id="advantages">
@@ -135,13 +177,17 @@
 
 	</main>
 
-	<footer id="footer">
-
-		<p><small>&copy; Copyright 2017 | ООО «Инвест-Пром» | Все права защищены. | ИНН: 7725378071 ОГРН: 1177746560408 </small></p>
-
-	</footer>
-
 </div>
+
+<footer id="footer" class="cover-bg">
+  <div class="container display-flex">
+    <div class="copyright">
+
+      <p><small>&copy; Copyright 2017 | ООО «Инвест-Пром» | Все права защищены. | ИНН: 7725378071 ОГРН: 1177746560408 </small></p>
+
+    </div>
+  </div>
+</footer>
 
 <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

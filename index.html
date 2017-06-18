@@ -53,8 +53,8 @@
   <meta name="theme-color" content="#ffffff">
 
 	<!-- concatenate and minify for production -->
-	<link rel="stylesheet" href="assets/css/reset.css" />
-	<link rel="stylesheet" href="assets/css/style.css" />
+	<link type="text/css" rel="stylesheet" href="assets/css/reset.css" />
+	<link type="text/css" rel="stylesheet" href="assets/css/style.css" />
 
 	<!-- Lea Verou's prefixfree (http://leaverou.github.io/prefixfree/), lets you use un-prefixed properties in your CSS files -->
 	<script src="assets/js/libs/prefixfree.min.js"></script>
@@ -84,31 +84,30 @@
 	<header id="header">
 		<div class="header-inner">
 			<div class="container">
-        <ul class="main-nav">
+        <div class="main-nav">
           <nav class="navbar" role="navigation">
 
             <div id="logo">
               <a href="/" title="ООО «Инвест-Пром»">
-                <img src="assets/img/logo.svg" alt="ООО «Инвест-Пром»" width="170">
+                <img src="assets/img/logo.svg" alt="ООО «Инвест-Пром»">
               </a>
             </div>
 
             <ul id="menu">
               <li>
-                <a href="/" title="Главная">
+                <a href="/" title="Главная" class="selected">
                   Главная
-                  <span></span>
                 </a>
               </li>
               <li>
                 <a href="/contacts" title="Контакты">
                   Контакты
-                  <span></span>
                 </a>
               </li>
             </ul>
 
           </nav>
+          <div class="clearfix"></div>
         </div>
 			</div>
 		</div>

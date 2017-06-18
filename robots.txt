@@ -1,0 +1,5 @@
+Host: transinvestprom.ru
+User-Agent: *
+Allow: /
+Disallow: /admin
+Sitemap: http://transinvestprom.ru/sitemap.xml

@@ -1,7 +1,49 @@
-/* A Linux- and Windows-friendly sans-serif font stack: http://prospects.mhurrell.co.uk/post/updating-the-helvetica-font-stack */
-body {font: 13px Helmet, Freesans, sans-serif;}
+/* Roboto Fonts */
 
-/* Using local fonts? Check out Font Squirrel's webfont generator: http://www.fontsquirrel.com/tools/webfont-generator */
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+  url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "RobotoLight";
+  src: url("../fonts/RobotoLight/RobotoLight.eot");
+  src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/RobotoLight/RobotoLight.woff") format("woff"),
+  url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "RobotoMedium";
+  src: url("../fonts/RobotoMedium/RobotoMedium.eot");
+  src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"),
+  url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "RobotoBold";
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/RobotoBold/RobotoBold.woff") format("woff"),
+  url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  font-size: 14px;
+  font-family: 'RobotoRegular', sans-serif;
+}
 
 /* We like off-black for text. */
 body, select, input, textarea {color: #333;}
@@ -34,6 +76,37 @@ blockquote {padding: 16px; background: #eee;}
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.cover-bg{
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+}
+
+.display-flex{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
 /* Header styles
@@ -80,13 +153,16 @@ blockquote {padding: 16px; background: #eee;}
 
 #menu > li{
   display: inline-block;
-  padding: 15px 10px;
+  padding: 0px 10px;
   position: relative;
 }
 
 #menu li > a{
   text-transform: uppercase;
   color: #ffffff;
+  position: relative;
+  padding: 15px 0px;
+  display: block;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -102,12 +178,20 @@ blockquote {padding: 16px; background: #eee;}
   height: 2px;
   left: 0;
   position: absolute;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
 }
 
 #menu li > a.selected{
   color: #006db7;
   pointer-events: none;
   cursor: default;
+}
+
+#menu li > a.selected:after{
+  background: #006db7;
 }
 
 #menu li > a:hover{
@@ -117,6 +201,51 @@ blockquote {padding: 16px; background: #eee;}
 #menu li > a:hover:after{
   background: #006db7;
 }
+
+/* Main-section styles
+-------------------------------------------------------------------------------*/
+
+#main{
+  position: relative;
+  height: 100%;
+  height: 100vh;
+  width: 100%;
+  background-image: url(/assets/img/main-bg.jpg);
+}
+
+.info-block{
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+}
+
+.info-block h1 {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.info-block h1 > p{
+  font-size: 54px;
+  font-family: 'RobotoBold', sans-serif;
+  line-height: 64px;
+  margin: 25px auto;
+}
+
+.info-block h1 > span{
+  font-size: 28px;
+  font-family: 'RobotoRegular', sans-serif;
+  line-height: 32px;
+}
+
+/* Footer styles
+-------------------------------------------------------------------------------*/
+
 
 /* Media queries
 -------------------------------------------------------------------------------*/

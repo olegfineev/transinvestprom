@@ -53,15 +53,15 @@
   <meta name="theme-color" content="#ffffff">
 
 	<!-- concatenate and minify for production -->
-	<link type="text/css" rel="stylesheet" href="assets/css/reset.css" />
-	<link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+	<link type="text/css" rel="stylesheet" href="/assets/css/reset.css" />
+	<link type="text/css" rel="stylesheet" href="/assets/css/style.css" />
 
 	<!-- Lea Verou's prefixfree (http://leaverou.github.io/prefixfree/), lets you use un-prefixed properties in your CSS files -->
-	<script src="assets/js/libs/prefixfree.min.js"></script>
+	<script src="/assets/js/libs/prefixfree.min.js"></script>
 
 	<!-- This is a minimized, base version of Modernizr. (http://modernizr.com)
 		  You will need to create new builds to get the detects you need. -->
-	<script src="assets/js/libs/modernizr-3.2.0.base.js"></script>
+	<script src="/assets/js/libs/modernizr-3.2.0.base.js"></script>
 
 	<!-- Twitter: see https://dev.twitter.com/docs/cards/types/summary-card for details -->
 	<meta name="twitter:card" content="">
@@ -115,8 +115,10 @@
 
 	<main id="content">
 
-    <section class="page-content" id="main">
-
+    <section class="page-content cover-bg" id="main">
+        <div class="info-block display-flex">
+          <h1><p>Инвест-Пром</p><span>Транспортная компания. Услуги грузоперевозок.</span></h1>
+        </div>
     </section>
 
     <section class="page-content" id="about">
@@ -135,7 +137,7 @@
 
 	<footer id="footer">
 
-		<p><small>&copy; Copyright 2017 | ООО «Инвест-Пром» | Все права защищены.</small></p>
+		<p><small>&copy; Copyright 2017 | ООО «Инвест-Пром» | Все права защищены. | ИНН: 7725378071 ОГРН: 1177746560408 </small></p>
 
 	</footer>
 
@@ -147,23 +149,8 @@
 
 <!-- this is where we put our custom functions -->
 <!-- don't forget to concatenate and minify for production -->
-<script src="assets/js/functions.js"></script>
+<script src="/assets/js/functions.js"></script>
 <script>$(document).ready(initPage);</script>
-
-<!-- Asynchronous google analytics; this is the official snippet.
-	 Replace UA-XXXXXX-XX with your site's ID and uncomment to enable.
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-XXXXXX-XX', 'auto');
-  ga('send', 'pageview');
-
-</script>
--->
 
 </body>
 </html>
